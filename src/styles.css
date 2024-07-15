@@ -1,21 +1,72 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --background: #1a3636;
+  --text: #d6bd98;
+  --primary: #40534c;
+  --secondary: #677d6a;
 }
 
-html, body {
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: var(--background);
 }
 
 main {
   margin: auto;
-  width: 50%;
   padding: 20px;
 }
 
 main > h1 {
   text-align: center;
   font-size: 3.5em;
+}
+
+.l-guesses {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+
+.c-guess-container {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.c-letter-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 0.5rem;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  text-align: center;
+  color: var(--text);
+  font-size: 2rem;
+  border: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.c-letter-box.correct {
+  background-color: #4caf50;
+}
+
+.c-letter-box.contains {
+  background-color: #8bc34a;
 }

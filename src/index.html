@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vanilla JavaScript App</title>
+    <script defer src="script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
-
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
-
+  <body>
+    <main>
+      <section class="l-guesses" id="js-guess"></section>
+      <div class="c-guess-container" id="inputs">
+        <input class="c-letter-box" maxlength="1" />
+        <input class="c-letter-box" maxlength="1" disabled />
+        <input class="c-letter-box" maxlength="1" disabled />
+        <input class="c-letter-box" maxlength="1" disabled />
+        <input class="c-letter-box" maxlength="1" disabled />
+      </div>
+    </main>
+  </body>
 </html>
